@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.links {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid; /* Adicionado para bordas coloridas */
+    background-color: transparent; /* Fundo transparente */
+    color: inherit; /* Cor do texto herdada */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adicionado para suavizar a transição */
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo levemente escuro */
+    color: inherit; /* Mantém a cor do texto original */
+}
+
+.whatsapp {
+    border-color: #25d366; /* Cor da borda */
+    color: #25d366; /* Cor do texto */
+}
+
+.instagram {
+    border-color: #e4405f; /* Cor da borda */
+    color: #e4405f; /* Cor do texto */
+}
+
+.location {
+    border-color: #007bff; /* Cor da borda */
+    color: #007bff; /* Cor do texto */
+}
+
+.hours {
+    margin-top: 20px;
+}
+
+.hours h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.hours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hours li {
+    font-size: 14px;
+    color: #555;
+}
+
+.icon {
+    width: 24px; /* Ajuste o tamanho conforme necessário */
+    height: 24px;
+}
