@@ -1,12 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Fonte moderna */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #121f2f; /* Azul mais escuro e sóbrio */
 }
 
 .card {
@@ -22,12 +22,6 @@ body {
 .logo {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 24px;
-    color: #333;
 }
 
 p {
@@ -43,34 +37,33 @@ p {
 .btn {
     display: inline-block;
     margin: 5px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 25px; /* Ajuste no tamanho */
+    border-radius: 30px; /* Bordas arredondadas */
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid; /* Adicionado para bordas coloridas */
-    background-color: transparent; /* Fundo transparente */
-    color: inherit; /* Cor do texto herdada */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Adicionado para suavizar a transição */
+    font-size: 14px;
+    border: none; /* Remove bordas */
+    color: #fff; /* Cor do texto */
+    background: linear-gradient(45deg, #4caf50, #81c784); /* Gradiente padrão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação */
 }
 
 .btn:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Fundo levemente escuro */
-    color: inherit; /* Mantém a cor do texto original */
+    transform: translateY(-3px); /* Elevação ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
 }
 
 .whatsapp {
-    border-color: #25d366; /* Cor da borda */
-    color: #25d366; /* Cor do texto */
+    background: linear-gradient(45deg, #1ebe4a, #3dda6f); /* Gradiente ajustado para melhor contraste */
 }
 
 .instagram {
-    border-color: #e4405f; /* Cor da borda */
-    color: #e4405f; /* Cor do texto */
+    background: linear-gradient(45deg, #e4405f, #f77737); /* Gradiente Instagram */
 }
 
 .location {
-    border-color: #007bff; /* Cor da borda */
-    color: #007bff; /* Cor do texto */
+    background: linear-gradient(45deg, #007bff, #5a9dfc); /* Gradiente Localização */
 }
 
 .hours {
@@ -95,4 +88,10 @@ p {
 .icon {
     width: 24px; /* Ajuste o tamanho conforme necessário */
     height: 24px;
+}
+
+.specialties-list {
+    text-align: left; /* Alinha a lista à esquerda */
+    padding-left: 20px; /* Adiciona espaçamento à esquerda */
+    margin-bottom: 30px; /* Adiciona espaçamento inferior */
 }
