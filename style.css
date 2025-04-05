@@ -33,16 +33,19 @@ p {
 
 .links {
     margin: 20px 0;
+    display: flex; /* Alinha os botões na mesma linha */
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os botões */
 }
 
 .btn {
     display: inline-block;
     margin: 5px;
-    padding: 12px 25px; /* Ajuste no tamanho */
-    border-radius: 30px; /* Bordas arredondadas */
+    padding: 8px 15px; /* Reduz o tamanho dos botões */
+    border-radius: 20px; /* Bordas mais suaves */
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px; /* Ajusta o tamanho da fonte */
     border: none; /* Remove bordas */
     color: #fff; /* Cor do texto */
     background: linear-gradient(45deg, #4caf50, #81c784); /* Gradiente padrão */
@@ -71,6 +74,12 @@ p {
     margin-top: 20px;
 }
 
+.specialties {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
 .hours h2 {
     font-size: 18px;
     color: #333;
@@ -95,4 +104,11 @@ p {
     text-align: left; /* Alinha a lista à esquerda */
     padding-left: 20px; /* Adiciona espaçamento à esquerda */
     margin-bottom: 30px; /* Adiciona espaçamento inferior */
+}
+
+.additional-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff; /* Texto em branco para contraste */
+    text-align: center;
 }
