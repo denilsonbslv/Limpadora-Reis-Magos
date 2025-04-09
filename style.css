@@ -34,7 +34,6 @@ p {
 }
 
 .links {
-    margin: 20px 0;
     display: flex; /* Alinha os botões na mesma linha */
     justify-content: center;
     gap: 10px; /* Espaçamento entre os botões */
@@ -104,8 +103,8 @@ p {
 
 .specialties-list {
     text-align: left; /* Alinha a lista à esquerda */
-    padding-left: 20px; /* Adiciona espaçamento à esquerda */
-    margin-bottom: 30px; /* Adiciona espaçamento inferior */
+    padding-left: 10px; /* Adiciona espaçamento à esquerda */
+    margin-bottom: 10px; /* Adiciona espaçamento inferior */
 }
 
 .additional-info {
@@ -113,4 +112,66 @@ p {
     font-size: 14px;
     color: #000 !important; /* Força a cor preta, ignorando conflitos */
     text-align: center;
+}
+
+.reviews-title {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%; /* Garante que o carrossel não ultrapasse a largura da tela */
+    overflow: hidden; /* Garante que o conteúdo fora do limite não seja exibido */
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex; /* Garante que o carrossel se comporte como um contêiner flexível */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    height: auto; /* Ajusta a altura automaticamente com base no conteúdo */
+    cursor: pointer; /* Indica que o carrossel é clicável */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: auto; /* Ajusta a altura automaticamente com base no conteúdo */
+}
+
+.carousel-inner img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    height: auto; /* Ajusta a altura automaticamente com base na proporção da imagem */
+    object-fit: contain; /* Exibe a imagem inteira sem cortes */
+    margin: auto; /* Centraliza a imagem dentro do contêiner */
+    border-radius: 10px; /* Mantém bordas arredondadas */
+    background-color: #fff; /* Adiciona um fundo branco para imagens menores */
+}
+
+.carousel-control {
+    display: none; /* Oculta os botões de navegação */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
