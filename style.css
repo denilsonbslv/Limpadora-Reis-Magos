@@ -9,7 +9,6 @@ body {
     background-color: #121f2f; /* Azul mais escuro e sóbrio */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center fixed;
     background-size: cover; /* Garante que a imagem cubra toda a tela */
-    color: #fff; /* Ajusta a cor do texto para contraste */
 }
 
 .card {
