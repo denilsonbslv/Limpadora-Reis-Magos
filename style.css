@@ -7,10 +7,13 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #121f2f; /* Azul mais escuro e sóbrio */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
+    color: #fff; /* Ajusta a cor do texto para contraste */
 }
 
 .card {
-    background: #fff;
+    background: rgba(199, 199, 199, 0.7); /* Fundo branco com 90% de opacidade */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -27,7 +30,7 @@ body {
 
 p {
     font-size: 16px;
-    color: #555;
+    color: #000000;
     margin: 5px 0;
 }
 
@@ -92,7 +95,7 @@ p {
 
 .hours li {
     font-size: 14px;
-    color: #555;
+    color: #333;
 }
 
 .icon {
@@ -109,6 +112,6 @@ p {
 .additional-info {
     margin-top: 20px;
     font-size: 14px;
-    color: #fff; /* Texto em branco para contraste */
+    color: #000 !important; /* Força a cor preta, ignorando conflitos */
     text-align: center;
 }
