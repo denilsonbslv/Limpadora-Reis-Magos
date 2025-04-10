@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Garante altura mínima sem cortes */
     background-color: #121f2f; /* Azul mais escuro e sóbrio */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center fixed;
     background-size: cover; /* Garante que a imagem cubra toda a tela */
@@ -24,7 +24,6 @@ body {
 .logo {
     max-width: 100%;
     height: auto;
-    margin-top: 20px; /* Adiciona margem superior */
 }
 
 p {
